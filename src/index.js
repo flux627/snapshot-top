@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import {getChoices, getVotes} from "./queries.js";
 import {findMaxIndices} from "./findMaxIndices.js";
 
-const proposalId = process.argv[2];
+const proposalId = process.argv[2] || '0xa0220651df3d1e501f211f02bd81f3e00e2d182086a8b4cec5eee5595eb6bb5e';
 const topCount = process.argv[3] || 7;
 
 (async () => {
