@@ -1,7 +1,7 @@
 snapshot-top
 ==
 
-Gets the top N choices from an Approval Vote style snapshot.org proposal.
+Gets the top N choices from an Approval/Ranked Choice style snapshot.org proposal.
 
 ## Usage
 ```
