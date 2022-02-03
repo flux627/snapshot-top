@@ -10,8 +10,8 @@ const topCount = process.argv[3] || 7;
   const votes = await getVotes(proposalId)
   const totals = Array(choices.length).fill(0)
   for (const vote of votes) {
-    for (const choice of vote.choice) {
-      totals[choice - 1] += vote.vp
+    for (let i = 0; i < vote.choice.length || i < topCount; i++) {
+      totals[vote.choice[i] - 1] += vote.vp
     }
   }
   const maxIndices = findMaxIndices(totals, topCount)
